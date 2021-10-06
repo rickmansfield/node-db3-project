@@ -122,4 +122,7 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
         }
     ]
 }
+
+//be sure nodmone is installed globally 
+//npm i -g nodemon
 ```
