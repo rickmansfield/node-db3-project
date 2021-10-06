@@ -1,5 +1,19 @@
 # Node DB3 Project Starter Code
 
+- [Node DB3 Project Starter Code](#node-db3-project-starter-code)
+  - [Task 1: Project Setup and Submission](#task-1-project-setup-and-submission)
+  - [Task 2: Project Minimum Viable Product](#task-2-project-minimum-viable-product)
+    - [Database](#database)
+    - [API](#api)
+    - [Middleware Functions](#middleware-functions)
+    - [Database Functions](#database-functions)
+      - [Schemes Schema](#schemes-schema)
+      - [Steps Schema](#steps-schema)
+    - [Notes](#notes)
+  - [Task 3: Multi Table Queries](#task-3-multi-table-queries)
+  - [Task 4: Stretch Problems](#task-4-stretch-problems)
+  - [Helpful Debugger restart using Nodemon](#helpful-debugger-restart-using-nodemon)
+
 ## Task 1: Project Setup and Submission
 
 Your assignment page on Canvas should contain instructions for submitting this project. If you are still unsure, reach out to Lambda Staff.
@@ -84,3 +98,28 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
 - Find the category that brings in the least revenue.
 - Find the customer country with the most orders.
 - Find the shipper that moves the most cheese measured in units.
+
+
+## Helpful Debugger restart using Nodemon
+[link to stackoverflow solution](https://stackoverflow.com/questions/53352303/how-to-debug-a-nodemon-project-in-vscode)
+
+``` json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node", 
+            "request": "launch",
+            "name": "nodemon",
+            "runtimeExecutable": "nodemon",
+            "program": "${workspaceFolder}/index.js",
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "env": {
+                "debug": "app:*",
+            }
+        }
+    ]
+}
+```
